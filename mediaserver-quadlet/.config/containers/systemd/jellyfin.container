@@ -10,8 +10,8 @@ Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=NVIDIA_DRIVER_CAPABILITIES=comp
 Volume=%h/mediaserver/%N:/config
-Volume=%h/mediaserver/data/Series:/data/tvshows
-Volume=%h/mediaserver/data/Movies:/data/movies
+Volume=/srv/content/Series:/data/tvshows
+Volume=/srv/content/Movies:/data/movies
 PublishPort=8096:8096
 
 [Service]

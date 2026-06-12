@@ -10,7 +10,7 @@ Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=WEBUI_PORT=8080
 Volume=%h/mediaserver/%N:/config
-Volume=%h/mediaserver/downloads:/downloads
+Volume=/srv/downloads:/downloads
 PublishPort=8080:8080
 PublishPort=6881:6881
 PublishPort=6881:6881/udp
