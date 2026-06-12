@@ -4,7 +4,7 @@ Description=Jellyfin
 [Container]
 Image=lscr.io/linuxserver/jellyfin:latest
 ContainerName=jellyfin
-Network=mediaserver_network
+Network=mediaserver.network
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
@@ -16,3 +16,6 @@ PublishPort=8096:8096
 
 [Service]
 Restart=unless-stopped
+
+[Install]
+WantedBy=default.target
