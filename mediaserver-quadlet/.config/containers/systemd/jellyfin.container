@@ -5,14 +5,13 @@ Description=Jellyfin
 Image=lscr.io/linuxserver/jellyfin:latest
 ContainerName=jellyfin
 Network=mediaserver_network
-EnvironmentFile=./mediaserver-common.env
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=NVIDIA_DRIVER_CAPABILITIES=comp
-Volume=%E{CONFIG_PATH}/jellyfin:/config
-Volume=%E{CONTENT_PATH}/Series:/data/tvshows
-Volume=%E{CONTENT_PATH}/Movies:/data/movies
+Volume=%h/mediaserver/%N:/config
+Volume=%h/mediaserver/data/Series:/data/tvshows
+Volume=%h/mediaserver/data/Movies:/data/movies
 PublishPort=8096:8096
 
 [Service]
