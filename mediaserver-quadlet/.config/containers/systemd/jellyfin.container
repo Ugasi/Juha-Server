@@ -15,7 +15,7 @@ Volume=%h/mediaserver/data/Movies:/data/movies
 PublishPort=8096:8096
 
 [Service]
-Restart=unless-stopped
+Restart=always
 
 [Install]
 WantedBy=default.target
