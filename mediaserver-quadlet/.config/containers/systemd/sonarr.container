@@ -8,13 +8,14 @@ Network=mediaserver.network
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
-Volume=%h/mediaserver/%N:/config
+Volume=/etc/%N:/config
 Volume=/srv/content/Series:/tv
 Volume=/srv/downloads:/downloads
 PublishPort=8989:8989
 
 [Service]
 Restart=always
+ConfigurationDirectory=%N
 
 [Install]
 WantedBy=default.target

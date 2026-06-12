@@ -9,13 +9,14 @@ Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=NVIDIA_DRIVER_CAPABILITIES=comp
-Volume=%h/mediaserver/%N:/config
+Volume=/etc/%N:/config
 Volume=/srv/content/Series:/data/tvshows
 Volume=/srv/content/Movies:/data/movies
 PublishPort=8096:8096
 
 [Service]
 Restart=always
+ConfigurationDirectory=%N
 
 [Install]
 WantedBy=default.target
