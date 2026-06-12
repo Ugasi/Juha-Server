@@ -10,7 +10,7 @@ Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=NVIDIA_DRIVER_CAPABILITIES=comp
-Volume=./data/jellyfin:/config
+Volume=%E{CONFIG_PATH}/jellyfin:/config
 Volume=%E{CONTENT_PATH}/Series:/data/tvshows
 Volume=%E{CONTENT_PATH}/Movies:/data/movies
 PublishPort=8096:8096
