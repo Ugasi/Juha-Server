@@ -9,7 +9,7 @@ Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=WEBUI_PORT=8080
-Volume=/etc/%N:/config
+Volume=%h/.config/%N:/config
 Volume=/srv/downloads:/downloads
 PublishPort=8080:8080
 PublishPort=6881:6881

@@ -9,7 +9,7 @@ Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Environment=NVIDIA_DRIVER_CAPABILITIES=comp
-Volume=/etc/%N:/config
+Volume=%h/.config/%N:/config
 Volume=/srv/content/Series:/data/tvshows
 Volume=/srv/content/Movies:/data/movies
 PublishPort=8096:8096
