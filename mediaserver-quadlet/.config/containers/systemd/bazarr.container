@@ -5,6 +5,7 @@ Description=Bazarr
 Image=lscr.io/linuxserver/bazarr:latest
 ContainerName=bazarr
 Network=mediaserver.network
+AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
@@ -13,6 +14,8 @@ Volume=/srv/content/Series:/tv
 Volume=/srv/content/Movies:/movies
 PublishPort=6767:6767
 
+
+AutoUpdate=registry
 [Service]
 Restart=always
 ConfigurationDirectory=%N

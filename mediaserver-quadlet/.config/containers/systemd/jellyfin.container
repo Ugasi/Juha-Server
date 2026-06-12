@@ -5,6 +5,7 @@ Description=Jellyfin
 Image=lscr.io/linuxserver/jellyfin:latest
 ContainerName=jellyfin
 Network=mediaserver.network
+AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki

@@ -5,6 +5,7 @@ Description=qBittorrent
 Image=lscr.io/linuxserver/qbittorrent:latest
 ContainerName=qBittorrent
 Network=mediaserver.network
+AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki

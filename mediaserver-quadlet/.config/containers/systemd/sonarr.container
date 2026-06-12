@@ -5,6 +5,7 @@ Description=Sonarr
 Image=lscr.io/linuxserver/sonarr:latest
 ContainerName=sonarr
 Network=mediaserver.network
+AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki

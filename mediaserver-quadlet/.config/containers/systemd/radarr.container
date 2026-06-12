@@ -5,6 +5,7 @@ Description=Radarr
 Image=lscr.io/linuxserver/radarr:latest
 ContainerName=radarr
 Network=mediaserver.network
+AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
