@@ -14,8 +14,6 @@ Volume=/srv/content/Series:/tv
 Volume=/srv/content/Movies:/movies
 PublishPort=6767:6767
 
-
-AutoUpdate=registry
 [Service]
 Restart=always
 ConfigurationDirectory=%N
