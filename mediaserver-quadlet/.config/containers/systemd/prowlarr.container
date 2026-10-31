@@ -14,7 +14,7 @@ PublishPort=9696:9696
 
 [Service]
 Restart=always
-ConfigurationDirectory=myapp
+ConfigurationDirectory=%N
 
 [Install]
 WantedBy=default.target
