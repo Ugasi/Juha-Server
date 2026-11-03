@@ -1,4 +1,0 @@
-[Network]
-NetworkName=mediaserver_network
-Driver=bridge
-

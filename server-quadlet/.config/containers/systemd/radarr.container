@@ -1,18 +1,18 @@
 [Unit]
-Description=Bazarr
+Description=Radarr
 
 [Container]
-Image=lscr.io/linuxserver/bazarr:latest
-ContainerName=bazarr
-Network=mediaserver.network
+Image=lscr.io/linuxserver/radarr:latest
+ContainerName=radarr
+Network=media.network
 AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Volume=%h/.config/%N:/config
-Volume=/srv/content/Series:/tv
 Volume=/srv/content/Movies:/movies
-PublishPort=6767:6767
+Volume=/srv/downloads:/downloads
+PublishPort=7878:7878
 
 [Service]
 Restart=always

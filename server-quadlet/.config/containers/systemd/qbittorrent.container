@@ -1,18 +1,20 @@
 [Unit]
-Description=Sonarr
+Description=qBittorrent
 
 [Container]
-Image=lscr.io/linuxserver/sonarr:latest
-ContainerName=sonarr
-Network=mediaserver.network
+Image=lscr.io/linuxserver/qbittorrent:latest
+ContainerName=qBittorrent
+Network=media.network
 AutoUpdate=registry
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
+Environment=WEBUI_PORT=8080
 Volume=%h/.config/%N:/config
-Volume=/srv/content/Series:/tv
 Volume=/srv/downloads:/downloads
-PublishPort=8989:8989
+PublishPort=8080:8080
+PublishPort=6881:6881
+PublishPort=6881:6881/udp
 
 [Service]
 Restart=always

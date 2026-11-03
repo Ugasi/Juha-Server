@@ -4,7 +4,7 @@ Description=llama.cpp inference server
 [Container]
 Image=ghcr.io/ggml-org/llama.cpp:server-cuda
 ContainerName=llama-cpp
-Network=toolbox.network
+Network=tool.network
 PublishPort=8080:8080
 Volume=%h/models:/models:ro
 AddDevice=nvidia.com/gpu=all

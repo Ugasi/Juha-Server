@@ -1,0 +1,4 @@
+[Network]
+NetworkName=media_network
+Driver=bridge
+
