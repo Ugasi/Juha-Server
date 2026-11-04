@@ -5,11 +5,11 @@ Description=llama.cpp inference server
 Image=ghcr.io/ggml-org/llama.cpp:server-cuda
 ContainerName=llama-cpp
 Network=tool.network
-PublishPort=8080:8080
+PublishPort=8081:8081
 Volume=%h/models:/models:ro
 AddDevice=nvidia.com/gpu=all
 SecurityLabelDisable=true
-Exec=-m /models/qwen3.5-0.8b/Qwen3.5-0.8B-BF16.gguf --host 0.0.0.0 --port 8080 -c 4096 -n 2048 -ngl 99 --jinja
+Exec=-m /models/qwen3.5-0.8b/Qwen3.5-0.8B-BF16.gguf --host 0.0.0.0 --port 8081 -c 4096 -n 2048 -ngl 99 --jinja
 
 [Service]
 #Restart=on-failure
