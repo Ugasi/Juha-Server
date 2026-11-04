@@ -10,7 +10,7 @@ Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Volume=%h/.config/%N:/config
-Volume=/srv/content/Series:/tv
+Volume=/srv/share/Content/Series:/tv
 Volume=/srv/downloads:/downloads
 PublishPort=8989:8989
 
