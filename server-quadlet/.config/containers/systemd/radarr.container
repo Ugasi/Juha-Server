@@ -11,7 +11,7 @@ Environment=PGID=1000
 Environment=TZ=Europe/Helsinki
 Volume=%h/.config/%N:/config
 Volume=/srv/share/Content/Movies:/movies
-Volume=/srv/downloads:/downloads
+Volume=/srv/share/Downloads:/downloads
 PublishPort=7878:7878
 
 [Service]
